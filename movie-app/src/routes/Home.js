@@ -18,7 +18,7 @@ function Home() {
   return (
     <div>
       {loading ? (
-        <h1>Loading</h1>
+        <h1>Loading..</h1>
       ) : (
         movies.map((movie) => (
           <Movie

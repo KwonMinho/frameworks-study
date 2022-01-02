@@ -7,7 +7,6 @@ function App() {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    console.log("@");
     fetch("http://api.coinpaprika.com/v1/tickers")
       .then((response) => response.json())
       .then((json) => {
