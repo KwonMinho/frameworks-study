@@ -28,9 +28,19 @@ describe("Calculator", () => {
     expect(cal.value).toBe(3);
   });
 
+  it("add should throw an error if value is grater than 100", () => {
+    expect(() => cal.add(101)).toThrow();
+  });
+
   it("multiply", () => {
     cal.set(1);
     cal.multiply(2);
+    expect(cal.value).toBe(2);
+  });
+
+  it("subtract", () => {
+    cal.set(5);
+    cal.subtract(3);
     expect(cal.value).toBe(2);
   });
 
